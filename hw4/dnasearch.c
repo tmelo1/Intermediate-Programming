@@ -4,6 +4,27 @@
 #include <ctype.h>
 #include "dnasearch.h"
 
+int readPattern(char patternString[]) {
+    int counter = 0;
+    int length = (int) strlen(patternString);
+    while(scanf("%c", &patternString[counter]) != EOF) {
+        counter++;
+        if (counter >= length) {
+            growArray(patternString);
+        }
+    }
+    return counter;
+}
+
+void growArray(char patternString[]) {
+    int length = (int) strlen(patternString);
+    char newString[length * 2];
+    for (int i = 0; i < length; i++) {
+        newString[i] = patternString[i];
+    } 
+    patternString = newString;
+}
+
 int isValid (char c) {
 	char check = toupper(c);
 	if (check == 'A' || check == 'C' || check == 'G' || check == 'T') {
@@ -12,24 +33,13 @@ int isValid (char c) {
 	return 0;
 }
 
-char* getPattern(char patternList[], int sequenceLength) {
-    char *token;
-    token = strtok(patternList, " \t\n");
-    if (!validPattern(token)) {
-        exit(1);
+int validPattern(char *pattern, int sequenceLength) {
+    if ((int) strlen(pattern) > sequenceLength || (int) strlen(pattern) == 0) {
+        return 0;
     }
-    if ((int) strlen(token) > sequenceLength || (int) strlen(token) == 0) {
-        printf("Invalid pattern.");
-        exit(3);
-    }
-    return token;
-}
-
-int validPattern(char *pattern) {
     for (int i = 0; i < (int) strlen(pattern); i++) {
-        if (!isValid(pattern[i])) {
-            printf("Invalid pattern.\n");
-            exit(2);
+        if (!isspace(pattern[i]) && !isValid(pattern[i])) {
+            return 0;
         }
     }
     return 1;
@@ -39,25 +49,32 @@ int validPattern(char *pattern) {
 /** Sequence length is m */
 
 void findOccurances(char dnaSeq[], int sequenceLength, char *pattern) {
-    int patternLength = strlen(pattern);
+    int m = strlen(pattern);
+    int n = sequenceLength;
     int occurances[sequenceLength];
-    int match;
     int numMatches = 0;
-    for (int i = 0; i <= sequenceLength - patternLength; i++) {
-        match = 1;
-        for (int j = 0; j <= patternLength; j++) {
+    for (int i = 0; i <= n - m; i++) {
+        int j;
+        for (j = 0; j < m; j++) {
             if (toupper(pattern[j]) != toupper(dnaSeq[i + j])) {
-                match = 0;
                 break;
             }
-            if (match) {
-                occurances[numMatches++] = i;
-            }
+        }
+        if (j == m) {
+            occurances[numMatches++] = i;
         }
     }
-    printf("%s: ", pattern);
-    for (int i = 0; i < (int) (sizeof(occurances)/sizeof(occurances[0])); i++) {
-        printf("%d ", occurances[i]);
+    for (int i = 0; i < m; i++)
+        printf("%c", toupper(pattern[i]));
+    
+
+    if (numMatches == 0) {
+        printf(" Not found");
+        return;
+    }
+    for (int i = 0; i < numMatches; i++) {
+        printf(" %d", occurances[i]);
     } 
+    //printf("\n");
     
 }

@@ -1,0 +1,35 @@
+commit f765f3eeb16d3cf3b274b20da0d8affb4e3eb928
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 17:48:28 2017 -0500
+
+    Added Makefile
+
+commit 8214e93f3aaba47b01d5ff29520467e4f57b70b2
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 17:48:01 2017 -0500
+
+    Working version, passes tests
+
+commit 3748e3e381ce97927978d62526d55d4c9852e5ea
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Sun Mar 5 19:49:34 2017 -0500
+
+    Compiles
+
+commit 7bc74861061aca3d536147cba0282266779a74d5
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Sun Mar 5 17:00:18 2017 -0500
+
+    Initial files
+
+commit ce8539c0b4d49b984f5f2391239f005c43af0974
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Thu Feb 9 01:10:03 2017 -0500
+
+    edits
+
+commit 45962698f1deb8a10c4eb9ad44f4113a5cb23049
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Thu Feb 9 00:31:49 2017 -0500
+
+    homework 1

@@ -1,0 +1,4 @@
+Tony Melo
+tmelo1@jhu.edu
+
+My hw3a was split into a header with all function definitions, and a c file that just calls all of them. Hw3b is all done in the same file, and is run using the output from hw3a. One small error was that whenever 0 was input as the department number, it matches everything in the list. 

@@ -1,0 +1,2 @@
+first word too long, truncated
+Concatenation was successful: 1234567890abcd

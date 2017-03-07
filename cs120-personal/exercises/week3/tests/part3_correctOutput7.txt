@@ -1,0 +1,3 @@
+first word too long, truncated
+second word too long, truncated
+Concatenation was successful: 12345678901234567890

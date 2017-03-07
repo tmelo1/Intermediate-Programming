@@ -1,0 +1,6 @@
+1,3c1
+< word1 is alpha, word2 is bet, and resultCap is 10
+< len1: 5, len2: 3
+< alphacbetConcatenation was successful: alphacbet
+---
+> Concatenation was successful: alphabet

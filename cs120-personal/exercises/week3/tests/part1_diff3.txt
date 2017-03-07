@@ -1,0 +1,6 @@
+1,3c1
+< word1 is alphabet, word2 is soup, and resultCap is 13
+< len1: 8, len2: 4
+< alphabetc@soupConcatenation was successful: alphabetc@soup
+---
+> Concatenation was successful: alphabetsoup

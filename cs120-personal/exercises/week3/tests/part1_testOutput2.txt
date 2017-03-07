@@ -1,0 +1,3 @@
+word1 is alpha, word2 is gamma, and resultCap is 10
+len1: 5, len2: 5
+Concatenation was not successful.

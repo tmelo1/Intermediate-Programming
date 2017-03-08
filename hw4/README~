@@ -1,0 +1,3 @@
+So everything should work, one small note is that when running the unit test, I had to hard code the "user input" somehow, so I made a file for redirection of input and hardcoded it's length to ensure that the test can run. So, run unittest.c as:
+
+./unittest < unittestfile

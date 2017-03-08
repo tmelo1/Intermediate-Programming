@@ -9,7 +9,7 @@ int readPattern(char patternString[]) {
     int length = (int) strlen(patternString);
     while(scanf("%c", &patternString[counter]) != EOF) {
         counter++;
-        if (counter >= length) {
+        if (counter == length) {
             growArray(patternString);
         }
     }
@@ -19,7 +19,7 @@ int readPattern(char patternString[]) {
 void growArray(char patternString[]) {
     int length = (int) strlen(patternString);
     char newString[length * 2];
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length - 1; i++) {
         newString[i] = patternString[i];
     } 
     patternString = newString;

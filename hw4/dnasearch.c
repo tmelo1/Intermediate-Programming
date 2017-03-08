@@ -11,6 +11,9 @@ Assignment #4
 #include <ctype.h>
 #include "dnasearch.h"
 
+/**
+* Read in a desired pattern string from main. Resize if it's too big.
+*/
 int readPattern(char patternString[]) {
     int counter = 0;
     int length = (int) strlen(patternString);
@@ -23,6 +26,9 @@ int readPattern(char patternString[]) {
     return counter;
 }
 
+/**
+* Resizing function.
+*/
 void growArray(char patternString[]) {
     int length = (int) strlen(patternString);
     char newString[length * 2];
@@ -32,6 +38,9 @@ void growArray(char patternString[]) {
     patternString = newString;
 }
 
+/**
+* Check if the character in question is a nucleotide. Return 1 if so, 0 otherwise.
+*/
 int isValid (char c) {
 	char check = toupper(c);
 	if (check == 'A' || check == 'C' || check == 'G' || check == 'T') {
@@ -40,6 +49,10 @@ int isValid (char c) {
 	return 0;
 }
 
+/**
+* Does the pattern contain anything other than nucleotides or whitespace? 
+* Return 0 if so, 1 if it's a valid pattern.
+*/
 int validPattern(char *pattern, int sequenceLength) {
     if ((int) strlen(pattern) > sequenceLength || (int) strlen(pattern) == 0) {
         return 0;
@@ -52,8 +65,11 @@ int validPattern(char *pattern, int sequenceLength) {
     return 1;
 }
 
-/** Pattern length is n*/
-/** Sequence length is m */
+/** 
+* Pattern length is n
+* Sequence length is m
+* Find all occurrances of the pattern in question. Uses naive matching algorithm. 
+*/
 
 void findOccurances(char dnaSeq[], int sequenceLength, char *pattern) {
     int m = strlen(pattern);

@@ -1,3 +1,15 @@
+commit 062cc3daa8e1f15c286ec6fac1485e92e92a31b4
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 21:00:48 2017 -0500
+
+    minor edits
+
+commit a7c00fae84f20e04d508bf622141255941200e65
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 20:56:24 2017 -0500
+
+    git log
+
 commit ccb4678a86d192e881a969dba43964bbe4a4d7b9
 Author: Tony M <tmelo1@jhu.edu>
 Date:   Tue Mar 7 20:54:11 2017 -0500

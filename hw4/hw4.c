@@ -1,3 +1,10 @@
+/**
+Tony Melo - tmelo1@jhu.edu (tmelo1)
+EN600.120
+Assignment #4
+3/7/2017
+ */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -52,7 +59,6 @@ int main (int argc, const char* argv[]) {
             continue;
         }
         findOccurances(dnaSequence, count, pattern);
-        printf("\n");
         pattern = strtok(NULL, " \t\n");
 
     }

@@ -5,7 +5,7 @@ CFLAGS = -std=c99 -Wall -Wextra -pedantic -g
 hw5: catalog.o transcript.o prompts.o hw5.o
 	$(CC) $(CFLAGS) -o hw5 hw5.o catalog.o transcript.o prompts.o
 
-unittest: unittest.o catalog.o transcript.o
+unittest: unittest.o catalog.o transcript.o catalog.h transcript.h
 	$(CC) $(CFLAGS) -o unittest unittest.o catalog.o transcript.o
 
 catalog.o: catalog.c catalog.h

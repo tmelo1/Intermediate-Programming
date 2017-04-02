@@ -1,0 +1,1 @@
+So, I know this doesn't really work.... Sorry to whoever has to grade this, it was a rough week. Also, a note, when entering text, if it doesn't continue after pressing enter, provide an EOF (Ctrl+D) because scanf was being weird. 

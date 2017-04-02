@@ -22,7 +22,7 @@ void testCourse(void) {
 	assert(test.department == 600);
 	assert(test.number == 120);
 	assert(test.credits == 4.0);
-	free(test)
+
 }
 
 void testMakeCourse(void) {
@@ -40,7 +40,6 @@ void testMakeCourse(void) {
 	assert(department == test.department);
 	assert(test.number == number);
 	assert(test.credits == credits);
-	free(test);
 }
 
 void testSearchByIdentifier(void) {
@@ -66,7 +65,6 @@ void testSearchingForCourseNotPresent(void) {
 	catalog[2] = test3;
 	int result = searchByIdentifier(catalog, "EN.600.316", 3);
 	assert(result == -1);
-	free(catalog);
 }
 
 void testValidIdentifier(void) {
@@ -134,5 +132,5 @@ int main(void) {
 	testInvalidIdentifierNonAlphaNum();
 	testTitleUpdate();
 	testMakeCourse();
-	
+
 }

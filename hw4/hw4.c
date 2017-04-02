@@ -55,8 +55,7 @@ int main (int argc, const char* argv[]) {
     while (pattern != NULL) {
         if (!validPattern(pattern, count)) {
             printf("Invalid pattern\n");
-            pattern = strtok(NULL, " \t\n");
-            continue;
+            return 6;
         }
         findOccurances(dnaSequence, count, pattern);
         pattern = strtok(NULL, " \t\n");

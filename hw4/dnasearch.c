@@ -92,12 +92,12 @@ void findOccurances(char dnaSeq[], int sequenceLength, char *pattern) {
     
 
     if (numMatches == 0) {
-        printf(" Not found");
+        printf(" Not found\n");
         return;
     }
     for (int i = 0; i < numMatches; i++) {
         printf(" %d", occurances[i]);
     } 
-    //printf("\n");
+    printf("\n");
     
 }

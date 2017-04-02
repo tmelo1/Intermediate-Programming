@@ -1,3 +1,9 @@
+/**
+Tony Melo - tmelo1@jhu.edu (tmelo1)
+EN600.120
+Assignment #5
+4/2/2017
+ */
 #include "catalog.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -42,7 +48,7 @@ int addCourse(Entry *head, Course *course, char sem[], char grade[]) {
 	return 1;
 }
 
-int deleteCourse(Entry *head, Course *course, char sem[]) {
+int deleteCourse(Entry *head, Course *course) {
 	Entry *current = head;
 	while (strcmp((current->c)->identifier, course->identifier) != 0 && (current->next)->next != NULL) {
 		current = current->next;

@@ -24,7 +24,7 @@ Image *readPPM(char *filename) {
 
 	char c = getc(file);
     while (c == '#') {
-    	while (getc(file) != '\n') ;
+    	while (getc(file) != '\n');
     		c = getc(file);
     }
 

@@ -3,8 +3,24 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-void crop(Image *img, int x1, int y1, int x2, int y2) {
-	return;
+int crop(Image *img, int x1, int y1, int x2, int y2) {
+	if ((x2 - x1 < 0) || (y2 - y1) < 0) {
+		return 0;
+	}
+	int count = 0;
+	Pixel *temp = malloc(sizeof(Pixel) * (x2 - x1) * (y2 - y1));
+	int ind = x1 + y1 * (img->cols);
+	for (int i = 0; i < img->rows * img->cols; i++) {
+		for (int j = 0; j < (x2 - x1); j++) {
+			temp[count] = img->p[ind+j];
+			count++;
+		}
+		ind = ind + (img->cols);
+	}
+	img->p = temp;
+	img->cols = x2 - x1;
+	img->rows = y2 - y1;
+	return 1;
 }
 
 void inversion(Image *img) {

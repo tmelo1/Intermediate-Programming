@@ -45,7 +45,10 @@ void runMenu(void) {
 				}
 				scanf("%d %d %d %d ", &x1, &y1, &x2, &y2);
 				option_c_msg(x1, y1, x2, y2);
-				crop(img, x1, y1, x2, y2);
+				if (!crop(img, x1, y1, x2, y2)) {
+					cropping_failed_prompt();
+					break;
+				}
 				break;
 			case 'i':
 				if (!flag) {

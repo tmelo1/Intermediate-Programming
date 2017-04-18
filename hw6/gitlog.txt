@@ -1,0 +1,101 @@
+commit 01d839447f241317b010002f5470584814970a1e
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Sun Apr 9 03:44:05 2017 -0400
+
+    Finished
+
+commit 766ac405ee37a515b00be6a80e7449b05e4f3aef
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Sun Apr 9 03:16:48 2017 -0400
+
+    Working version sans crop
+
+commit 9d4a55ac4f69ebe0efbbc7081c61564b2db26848
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Sun Apr 2 17:41:54 2017 -0400
+
+    Readme
+
+commit 36384963a203ad137cb5b4057ca12a56f552d5ef
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Sun Apr 2 17:37:23 2017 -0400
+
+    Make works I guess
+
+commit dd4f1531b6c7923fb20d12e24738063304d6f5ef
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Sun Apr 2 05:18:53 2017 -0400
+
+    forgot to commit
+
+commit 3d5e1ad84e4bcd752d16247e071c256e26a506bb
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 21:12:13 2017 -0500
+
+    Added README
+
+commit 332cb5ac9add01573e79a5afe780219870abd294
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 21:08:07 2017 -0500
+
+    Commented out code
+
+commit 062cc3daa8e1f15c286ec6fac1485e92e92a31b4
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 21:00:48 2017 -0500
+
+    minor edits
+
+commit a7c00fae84f20e04d508bf622141255941200e65
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 20:56:24 2017 -0500
+
+    git log
+
+commit ccb4678a86d192e881a969dba43964bbe4a4d7b9
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 20:54:11 2017 -0500
+
+    FINISHED
+
+commit 92629d165e3114dbc415224f77c2bc3f41f590a4
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 18:37:11 2017 -0500
+
+    Test files
+
+commit f765f3eeb16d3cf3b274b20da0d8affb4e3eb928
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 17:48:28 2017 -0500
+
+    Added Makefile
+
+commit 8214e93f3aaba47b01d5ff29520467e4f57b70b2
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Tue Mar 7 17:48:01 2017 -0500
+
+    Working version, passes tests
+
+commit 3748e3e381ce97927978d62526d55d4c9852e5ea
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Sun Mar 5 19:49:34 2017 -0500
+
+    Compiles
+
+commit 7bc74861061aca3d536147cba0282266779a74d5
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Sun Mar 5 17:00:18 2017 -0500
+
+    Initial files
+
+commit ce8539c0b4d49b984f5f2391239f005c43af0974
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Thu Feb 9 01:10:03 2017 -0500
+
+    edits
+
+commit 45962698f1deb8a10c4eb9ad44f4113a5cb23049
+Author: Tony M <tmelo1@jhu.edu>
+Date:   Thu Feb 9 00:31:49 2017 -0500
+
+    homework 1
